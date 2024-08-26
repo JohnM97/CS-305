@@ -1,45 +1,44 @@
 Summary of Client and Software Requirements
 Client Overview
 
-Artemis Financial is a company specializing in financial services, offering a range of solutions for managing personal and business finances. They sought to enhance their existing software infrastructure with improved security measures to protect sensitive financial data and ensure compliance with industry standards.
+Artemis Financial is a financial services company that needed to enhance the security of their software systems. The client required an assessment of their current software infrastructure to identify and address any existing security vulnerabilities. The goal was to protect sensitive financial data and ensure compliance with industry regulations.
 
-Software Requirements and Issue Addressed
+Software Requirements and Issues Addressed
 
-The primary issue Artemis Financial wanted to address was the security vulnerabilities present in their existing software systems. They required a comprehensive analysis of their software's security posture and the implementation of measures to mitigate identified vulnerabilities. The software needed to be secure, reliable, and capable of protecting client data from potential cyber threats.
+Artemis Financial’s primary requirement was to secure their software applications by identifying vulnerabilities within their codebase and third-party dependencies. The main issue addressed was the presence of outdated and vulnerable dependencies that could potentially expose sensitive information or allow unauthorized access.
 
 Response to Security Vulnerabilities
 What Was Done Well
 
-When identifying and addressing Artemis Financial's software security vulnerabilities, I performed a thorough vulnerability assessment using various tools and techniques. This involved analyzing the codebase for potential security flaws, such as outdated dependencies, insecure coding practices, and inadequate input validation. By systematically identifying these vulnerabilities, I could prioritize which issues required immediate attention and implement the appropriate fixes.
+I effectively utilized the OWASP Dependency-Check Maven plugin to identify security vulnerabilities within the third-party libraries used by Artemis Financial's software. This automated tool allowed me to generate detailed reports on potential vulnerabilities and prioritize them based on their severity. I also refactored the code to replace or update insecure dependencies with more secure versions, aligning with best practices for secure software development.
 
 Importance of Secure Coding
 
-Secure coding is crucial because it helps prevent vulnerabilities that malicious actors could exploit. Software security adds significant value to a company's overall well-being by protecting sensitive data, maintaining customer trust, and ensuring compliance with regulations. A secure software environment helps prevent data breaches, financial loss, and damage to the company's reputation.
+Coding securely is crucial to prevent vulnerabilities that can be exploited by malicious entities. Secure coding practices ensure that software is robust against attacks, protecting sensitive data and maintaining customer trust. For a company like Artemis Financial, secure software is essential to safeguarding client financial information and avoiding the reputational damage associated with security breaches.
 
 Challenges and Lessons Learned
 Challenging and Helpful Parts of the Vulnerability Assessment
 
-The most challenging part of the vulnerability assessment was accurately identifying all potential vulnerabilities in the existing codebase. This required a deep understanding of various security threats and how they could manifest in the software. However, this process was also incredibly helpful, as it provided a clear roadmap for what needed to be addressed to improve security.
+One challenging aspect of the vulnerability assessment was identifying all outdated or insecure dependencies in the codebase. Many third-party libraries used in the project had multiple versions, and determining the safest and most compatible update required careful analysis. However, this challenge was also an opportunity to learn more about dependency management and the importance of maintaining an up-to-date and secure codebase.
 
 Increasing Layers of Security
 
-To increase layers of security, I implemented several techniques, including updating outdated dependencies, enhancing input validation, and improving error handling. These measures added multiple layers of defense, making the software more resilient against attacks. In the future, I would use tools like static code analysis and penetration testing to assess vulnerabilities more comprehensively and decide on mitigation techniques.
+To increase security layers, I updated vulnerable dependencies to their latest stable versions and removed any unnecessary libraries that posed potential risks. Additionally, I applied security patches and enhanced the application’s configuration to ensure secure communications and data handling. In the future, I would continue to employ tools like OWASP Dependency-Check and incorporate additional automated security testing techniques, such as static and dynamic analysis, to ensure comprehensive vulnerability management.
 
 Ensuring Functionality and Security
 Ensuring Functionality and Security of Code
 
-To ensure the code and software application were both functional and secure, I conducted rigorous testing after implementing security enhancements. This included unit tests, integration tests, and regression tests to ensure that no new vulnerabilities were introduced during the refactoring process. Additionally, automated security scanning tools were used to identify any newly introduced security risks post-refactoring.
+After refactoring the code to replace vulnerable dependencies, I performed extensive testing to ensure the application remained functional and secure. This included running unit tests, integration tests, and regression tests to confirm that the updates did not introduce new issues. I also reran the dependency checks to verify that all vulnerabilities had been effectively addressed.
 
 Tools and Practices for Future Use
 Resources, Tools, and Coding Practices
 
-Several tools and practices proved invaluable throughout this project and would be helpful in future assignments or tasks. These include:
+Key tools and practices used in this project, which will be valuable for future assignments, include:
 
-OWASP Dependency-Check: This tool was used to identify vulnerabilities in third-party dependencies.
-JUnit Testing: Ensuring all changes maintained functionality and didn't introduce new vulnerabilities.
-Static Code Analysis: Using tools to analyze the codebase for potential security flaws before deployment.
-Secure Coding Practices: Adhering to best practices like input validation, secure error handling, and regular dependency updates.
+OWASP Dependency-Check Maven Plugin: Used to automatically scan and identify vulnerable dependencies within the project.
+Version Control and Dependency Management: Regular updates and patches to dependencies are essential for maintaining software security.
+Secure Configuration Management: Ensuring that software configurations are secure and align with best practices.
 Showcasing Skills to Future Employers
 Demonstrating Skills and Knowledge
 
-From this assignment, I would showcase my ability to identify and mitigate security vulnerabilities in software, highlighting my skills in conducting vulnerability assessments, applying secure coding practices, and using automated tools for security scanning. Additionally, I would demonstrate my experience in writing effective JUnit tests to ensure software functionality and reliability, which is crucial in developing secure, high-quality software.
+For future employment opportunities, I can showcase my ability to conduct thorough vulnerability assessments using automated tools and implement secure coding practices. The experience with Maven and dependency management, along with the demonstrated ability to update and secure third-party libraries, highlights my proficiency in maintaining secure and robust software applications. Additionally, my experience in writing effective tests to validate security and functionality is a critical skill for any software development role.
